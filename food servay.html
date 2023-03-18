@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Form</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Food Form</h1>
+    <p id="description">Please fill out this form with the required information to help us improve our serves</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Please enter your name: <input id="first-name" name="first-name"
+                    type="text" placeholder="ahmad alanti" required /></label>
+            <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email"
+                    placeholder="example@gmail.com" required /></label>
+            <label id="number-label" for="age">Input your age: <input id="number" type="number" name="age" min="12"
+                    max="120" placeholder="22" required /></label>
+        </fieldset>
+        <fieldset>
+            <p class="questions">What did you think about our food</p>
+            <label for="food-bad"><input id="food-bad" type="radio" name="food-review" class="inline" /> bad</label>
+            <label for="food-good"><input id="food-good" type="radio" name="food-review" class="inline" /> good</label>
+            <label for="food-very-good"><input id="food-very-good" type="radio" name="food-review" class="inline" />
+                very good</label>
+            <p class="questions">What premium options or ingredients would you like us to offer?</p>
+            <label for="candies">
+                <input id="candies" type="checkbox" required name="candies" class="inline" />
+                candies
+            </label>
+            <label for="drinks">
+                <input id="drinks" type="checkbox" required name="drinks" class="inline" />
+                Drinks
+            </label>
+            <label for="meat">
+                <input id="meat" type="checkbox" required name="meat" class="inline" />
+                Meat
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="review">your rating for our serves
+                <select id="review" name="review">
+                    <option value="">(select one)</option>
+                    <option value="1">1*</option>
+                    <option value="2">2*</option>
+                    <option value="3">3*</option>
+                    <option value="4">4*</option>
+                    <option value="5">5*</option>
+                </select>
+            </label>
+            <label for="userThoughts">do you have and complains about our serves:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="it takes too long for the food to arrive"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
